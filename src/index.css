@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: none;
+  background-color: #F3F7F4;
+
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+
+
+}
+
+.content {
+
+  position: relative;
+  z-index: 1;
+  background: url(https://static.fotor.com/app/features/img/aiimage/background_image4.jpg);
+  top: 0;
+  background-color: #161618;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+.Links {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.headertext h1 {
+  color: #3cff3c;
+  font-size: 2.9rem;
+  padding: 0.5rem;
+
+}
+
+.headertext p {
+  color: white;
+  font-size: 1.9rem;
+  padding: 0.5rem;
+}
+
+.but {
+  background: linear-gradient(48deg, #e6fa72, #62ff93 58%);
+  border: 0px solid;
+  padding: 5px 16px;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.but:hover {
+  background: linear-gradient(208deg, #e6fa72, #62ff93 58%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+:focus {
+  outline: none;
+}
+
+input[type="text"] {
+  color: #333;
+  width: 320px;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+.col-3 {
+  float: left;
+  width: 27.33%;
+  margin: 4px 0%;
+  position: relative;
+}
+
+/* necessary to give position: relative to parent. */
+input[type="text"] {
+  border-radius: 4px;
+  background: #35363A;
+  color: white;
+  width: 320px;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+
+.effect-2 {
+  border: 2px solid #232326;
+  padding: 10px 8px;
+}
+
+.prevent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #1C2021;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+.effect-2~.focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #4caf50;
+  transition: 0.4s;
+}
+
+.effect-2:focus~.focus-border {
+  width: 316px;
+  transition: 0.4s;
+  left: 2px;
+}
+
+::placeholder {
+  color: white;
+}
+
+.FORMFIELD {
+  padding: 3rem 0.5rem;
+  background-color: #161618;
+  background: linear-gradient(to bottom, #161618, #211210);
+  position: relative;
+  z-index: 9;
+}
+
+.featuredImg {
+  position: relative;
+  width: 22%;
+  transition: transform 4s cubic-bezier(0.04, 0.74, 0.01, 1) 0s;
+
+}
+
+.featuredImg img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 4%;
+  z-index: -1;
+  position: relative;
+}
+.featuredImg :hover{
+  transition: transform 3s cubic-bezier(0.04, 0.74, 0.01, 1) 0s;
+  transform: scale(1.1);
+  cursor: pointer;
+
+}
+
+.featuredImg_prompt {
+  position: absolute;
+  width: calc(100% - 8px);
+  height: auto;
+  bottom: 0;
+  z-index: -1;
+  text-align: justify;
+  color: white;
+  left: 0;
+  background: rgba(43, 43, 43, .3);
+  transition: height .3s;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  margin: auto 4px 6px;
+  font-size: 1rem;
+}
+
+.featuredImg_prompt h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-image {
+  width: 345px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.createpostimg{
+  width: 320px;
+    margin: 13% auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 0px #2de519;
+}
+.loadstate{
+  width: 97px;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+}
+.featureimg2{
+  border-radius: 15px;
+  width: 22%;
+}
+@media screen and (max-width: 1000px) {
+  .featureimg2{
+    width: 100%;}
+}
+@media screen and (max-width: 480px) {
+  .featuredImg {
+    position: relative;
+    width: 90%;
+  }
+  .featuredImg_prompt h2{
+    font-size: 2.2rem;
+  }
+  .loadstate {
+    width: 97px;
+    position: absolute;
+    top: 38%;
+    left: 38%;
+}
+}
